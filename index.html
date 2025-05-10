@@ -21,101 +21,141 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">
-        <img src="./images/logo.png" alt="" />
-      </div>
-      <div class="navbar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#hero_id">Hero</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#aboutme_id"
-                    >About Me</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects_id">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact_id">Contact</a>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="logo col-lg-3">
+            <img src="./images/logo.png" alt="" />
           </div>
-        </nav>
+          <div class="navbar col-lg-9">
+            <nav class="navbar navbar-expand-lg custom-navbar" >
+              <div class="container-fluid">
+                <a class="nav-link" href="#hero_id">Hero</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#aboutme_id">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects_id">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact_id">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="hero" id="hero_id">
-      <div>Hello My Name is Nimanthika</div>
-      <div>I am a Full Stack Developer</div>
-      <a href="">Let's see my works</a>
+    <div class="hero container" id="hero_id">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="./images/my_picture.png" alt="" />
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center">
+            Hello My Name is Nimanthika
+          </div>
+          <div class="d-flex align-items-center">
+            I am a Full Stack Developer
+          </div>
+          <a class="d-flex align-items-center hoverEffect" href="#projects_id"
+            >Let's see my works</a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="aboutMe" id="aboutme_id">
-      <p>
-        Hello, I'm Nimanthika Abeyrathna, a passionate and versatile full-stack
-        developer dedicated to crafting seamless web solutions. With a keen eye
-        for detail and a love for problem-solving, I'm committed to delivering
-        user-centric applications that blend creativity and functionality.
-      </p>
+      <div class="container">
+        <h1>About Me</h1>
+        <p>
+          Hello, I'm Nimanthika Abeyrathna, a passionate and versatile
+          full-stack developer dedicated to crafting seamless web solutions.
+          With a keen eye for detail and a love for problem-solving, I'm
+          committed to delivering user-centric applications that blend
+          creativity and functionality.
+        </p>
+      </div>
     </div>
 
     <div class="projects" id="projects_id">
-      <div>
-        <p>My Portfolio</p>
-        <p>V1.0.0</p>
-        <p>
-          In this project i used HTML, CSS, Bootstrap and Google fonts for
-          styling
-        </p>
-        <a href="">view</a>
+      <div class="container">
+        <h1>Projects</h1>
+        <div>
+          <h5>My Portfolio</h5>
+          <img
+            class="project-portfolio-img"
+            src="./images/portfolio.jpg"
+            alt=""
+          />
+          <p>
+            In this project i used HTML, CSS, Bootstrap and Google fonts for
+            styling
+          </p>
+          <a
+            class="hoverEffect"
+            href="https://nimanthikaabeyrathna.github.io/my_first_portfolio"
+            >view</a
+          >
+        </div>
       </div>
     </div>
 
     <div class="contact" id="contact_id">
-      <div>
-        <img src="./images/phone_icon.png" alt="" />
-        <p>Phone Number</p>
-        <p>081-5939078</p>
-      </div>
-      <div>
-        <img src="./images/email_icon.png" alt="" />
-        <p>E mail</p>
-        <p>nimanthikaabeyrathna@gmail.com</p>
-      </div>
-      <div>
-        <img src="./images/address_icon.png" alt="" />
-        <p>Address</p>
-        <p>Rathnapura, Sri Lanka</p>
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="contact-images" src="./images/phone_icon.png" alt="" />
+            <h3>Phone Number</h3>
+            <p>081-5939078</p>
+          </div>
+          <div class="col-lg-4">
+            <img class="contact-images" src="./images/email_icon.png" alt="" />
+            <h3>E mail</h3>
+            <p>nimanthikaabeyrathna@gmail.com</p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="contact-images"
+              src="./images/address_icon.png"
+              alt=""
+            />
+            <h3>Address</h3>
+            <p>Rathnapura, Sri Lanka</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer" id="footer_id">
-      <div class="logo">
-        <img src="./images/logo.png" alt="" />
-      </div>
-      <div class="navbar">
-        <a href="#hero_id">Hero</a>
-        <a href="#aboutme_id">About Me</a>
-        <a href="#projects_id">Projects</a>
-        <a href="#contact_id">Contact</a>
+      <div class="container">
+        <div class="row">
+          <div class="logo col-lg-6">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="navbar col-lg-6">
+            <a class="hoverEffect" href="#hero_id">Hero</a>
+            <a class="hoverEffect" href="#aboutme_id">About Me</a>
+            <a class="hoverEffect" href="#projects_id">Projects</a>
+            <a class="hoverEffect" href="#contact_id">Contact</a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
